@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Splitter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="div-1">
+          <form action="#" class="form">
+            <div class="input-1">
+              <h2 class="h2">Bill</h2>
+              <input
+                type="number"
+                name="amount"
+                class="input-input"
+                id="amount"
+              />
+            </div>
+            <div class="selectpercent">
+              <h2 class="h2">Select Tip %</h2>
+              <div class="percentage">
+                <div class="radio">
+                  <input type="radio" id="five" name="tip" value="5" />
+                  <label for="five" class="indicator">5%</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="ten" name="tip" value="10" />
+                  <label for="ten" class="indicator">10%</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="fifteen" name="tip" value="15" />
+                  <label for="fifteen" class="indicator">15%</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="twentyfive" name="tip" value="25" />
+                  <label for="twentyfive" class="indicator">25%</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="fifty" name="tip" value="50" />
+                  <label for="fifty" class="indicator">50%</label>
+                </div>
+                <input
+                  type="number"
+                  name="custom"
+                  id="custom"
+                  placeholder="0"
+                />
+              </div>
+              <div class="input-2">
+                <h2 class="h2">Number of People</h2>
+                <input
+                  type="number"
+                  name=""
+                  class="input-input"
+                  id="numberofpeople"
+                />
+              </div>
+            </div>
+            <input type="submit" hidden />
+          </form>
+        </div>
+        <div class="div-2">
+          <div class="price-1">
+            <div>
+              <h3>Tip Amount</h3>
+              <p class="person">/ person</p>
+            </div>
+            <div>
+              <h2 class="price">$<span id="tipPerPerson">0.00</span></h2>
+            </div>
+          </div>
+          <div class="price-1">
+            <div>
+              <h3>Total</h3>
+              <p class="person">/ person</p>
+            </div>
+            <div>
+              <h2 class="price">$<span id="totalPerPerson">0.00</span></h2>
+            </div>
+          </div>
+          <button class="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
